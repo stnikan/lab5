@@ -78,6 +78,13 @@ int main(void)
 {
     /* Replace with your application code */
 	LCD_init();
+
+	struct my_f{int8_t y; int8_t u; int8_t T;};
+my_f a;
+a.y = 0;
+a.u = 12;
+a.T = 3;
+
 	
 	uint8_t i;
 	
