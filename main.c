@@ -6,13 +6,12 @@
  */ 
 
 #include <avr/io.h>
-
-#define F_CPU 11059200UL
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
 #define RS 7 // выбор регистра
 #define E 6 // строб передачи
+
 void LCD_cmd(uint8_t cmd) {
 	//[]--------------------------------------------------[]
 	//| Назначение: запись кодов в регистр команд ЖКИ |
